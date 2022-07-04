@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+:root{
+    --blue: #0026ED;
+    --red:#FF0505;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+    background-color: #F3B18C;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    font-family: 'Finger Paint', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 64.85px;
+    margin: 5px;
+    color: var(--blue);
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li{
+    width: 80px;
+    height: 80px;
+    border: 10px solid black;
+    border-radius: 15px;
+    background-color: #fff;
+    list-style-type: none;
+    margin: 3px;
+    box-sizing: border-box;
+    font-family: 'Finger Paint', cursive;
+    Font-size: 64px;
+    line-height: 85%;
+    text-align: center;
+    
+}
+
+.blue{
+    color: var(--blue);
+}
+
+.red {
+    color: var(--red);
+}
+
+.blue:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.red:hover{
+    background-color: var(--red);
+    color: white;
+}
+
+.winner-x{
+    color:var(--red);
+    border-color: var(--red);
+    background: white;
+}
+
+
+.winner-o{
+    color:var(--blue);
+    border-color: var(--blue);
+    background: white;
 }

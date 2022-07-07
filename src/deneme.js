@@ -1,11 +1,6 @@
 import React, { useState,} from 'react'
 
 function Deneme() {
-<<<<<<< HEAD
-=======
-  //stil verebilmek için deneme yaptım.
-  //const [color, setColor] = useState('')
->>>>>>> 57592f1562941281e42076665adf116621e68715
   // kutucuklara dinamik olarak değer atayabilmek için oluşturulan 9'lu boş bir array taşıyan state tanımı.
   const [cells, setCells] = useState(Array(9).fill(''));
   //kazananı belirlemek için oluşturulan state tanımı. 

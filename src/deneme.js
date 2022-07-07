@@ -72,7 +72,7 @@ function Deneme() {
 
   return (
     <div className='body-1'>
-      <p>GAME TİME</p>
+      <p>GAME TIME</p>
       <div className='container'>
         <Li num={0} />
         <Li num={1} />

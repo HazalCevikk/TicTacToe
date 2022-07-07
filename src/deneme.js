@@ -1,16 +1,14 @@
 import React, { useState,} from 'react'
 
 function Deneme() {
-  //stil verebilmek için deneme yaptım.
-  const [color, setColor] = useState('')
   // kutucuklara dinamik olarak değer atayabilmek için oluşturulan 9'lu boş bir array taşıyan state tanımı.
   const [cells, setCells] = useState(Array(9).fill(''));
-  //kazananı belirlemek için oluşturulan state tanımı.
+  //kazananı belirlemek için oluşturulan state tanımı. 
   const [winner, setWinner] = useState('')
 
   //dinamik olarak li elemanı döndüren fonksiyon oluşturur.
   const Li = ({ num }) => {
-    return <li className={color} onClick={() => handleClick(num)}>{cells[num]}</li>
+    return <li onClick={() => handleClick(num)}>{cells[num]}</li>
   }
 
   const handleClick = (num) => {
